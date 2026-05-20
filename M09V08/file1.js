@@ -3,9 +3,13 @@ const {a : x} = require("./file3"); //a:x is not a key payer value, this export 
 console.log(a, x);
 
 
-const {add} = require("./utlils/add");
+// const {add} = require("./utlils/add");
+// console.log(add(2,4));
+// const {subs} = require("./utlils/substract")
+// console.log(subs(2,6));
+
+
+// const{add,subs} =require("./utlils/index") // same kaj korbe index.js howay next line ta
+const{add,subs} =require("./utlils")
 console.log(add(2,4));
-
-const {subs} = require("./utlils/substract")
-console.log(subs(2,6));
-
+console.log(subs(x,a));
